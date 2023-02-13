@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@78.5,200;100,200&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+
+}
+
+.img{
+    flex: 1;
+}
+
+.img img{
+    width: 500px;
+    height: 500px;
+}
+
+.text{
+    flex: 1;
+}
+
+@media screen and (max-width:900px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .img img{
+        width: 350px;
+        height:400px;
+    }
+}
